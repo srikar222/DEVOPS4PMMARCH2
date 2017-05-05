@@ -1,0 +1,49 @@
+Build tool?
+Build tool compiles the source code and creates a software package which can be deployed on server.
+Eg:java,dot net,python.
+
+Different technologies have different build tools.
+Java-Ant
+     -Maven(Most popular)
+     -Gradle(Upcoming)
+.Net-NAnt
+
+For applications in python and ruby:Node,Angular.
+
+
+Maven(Build tool)
+    Known for-Dependency management.
+             -Build
+             
+             
+com.xml
+     Configuration file used by maven for building a project(without com.xml maven does not work).
+     
+     xml uses:-
+     Storing configuration data.
+     To exchange data b/w two applications.
+     
+ We can design our own xml according to our need.
+ 
+ Dependency:-
+ It is a jar file on which the project depends on.Eg:servlet,hibernet,jpa.
+ 
+ Plugins:More features.
+ 
+ 
+ How maven manages dependencies?
+ -Maintains repositories(Internet).
+ -In repositories it stores jar files.
+ -Maven downloads jar files from internet.
+ 
+ 
+ Maven reposotories?
+ 
+-Central.
+-Remote.
+-Local.
+
+REpository?
+Collection of jar files.
+
+ 
