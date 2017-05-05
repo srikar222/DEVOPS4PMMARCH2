@@ -1,4 +1,4 @@
-Build tool?
+/Build tool?
 Build tool compiles the source code and creates a software package which can be deployed on server.
 Eg:java,dot net,python.
 
@@ -26,7 +26,8 @@ com.xml
  We can design our own xml according to our need.
  
  Dependency:-
- It is a jar file on which the project depends on.Eg:servlet,hibernet,jpa.
+ It is a jar file on which the project depends on. 
+ Eg:servlet,hibernet,jpa.
  
  Plugins:More features.
  
@@ -43,7 +44,67 @@ com.xml
 -Remote.
 -Local.
 
-REpository?
+What does REpository have?
 Collection of jar files.
 
- 
+Why we need Remote repository?
+1.
+  -Because of security reasons.
+  -We can maintain our own repository in company.
+2.
+  -Team-1 is working on a project where Team-2 depends on.
+    This can be done using remote repository.
+3.
+  Artifact.
+
+Maven Build life cycle:-
+Maven build does the following:
+  -Validation.
+  -Syntactical Errors.
+  -Dependency Errors.
+
+STEPS:
+1.Validate-pom.xml.
+2.Compile-SourceCode.
+3.Test-Execute test Cases written by development.
+
+Dev. writes code,he need to test.
+   -Unit Testing.
+   -Integration Testing.
+
+What is Junit?
+Framework using which we can Automate testing.
+Framework used by java developers for automating unit testing.
+
+4.Verify:-Integration test-Case.
+5.Packaging(war/jar/var)[Create package].
+6.Install (IN local repository).
+7.Deploy (IN remote repository).
+
+Maven Commands:
+How to compile src code?
+mvn compile [Step 2] Compiles Code.
+
+mvn test [Step 3,4,5] Executes.
+mvn package[Creates package].
+mvn install[Step 1,2,3,4,5]  Package maintained in local repository.
+mvn clean.
+mvn deploy.
+
+How to remove output folder?
+mvn clean.
+
+How to remove target directory?
+mvn clean package.
+mvn clean test package.
+mvn clean install package.
+
+Maven Transitive dependencies:-
+
+                             |--->b.jar
+      PROJECT---->.A.jar-----|
+                             |---->c.jar
+
+
+
+
