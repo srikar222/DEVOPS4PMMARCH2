@@ -1,0 +1,17 @@
+What is CI?
+Set of developers push their changes to the SCM followed by
+   -we run the build.
+   -Perform quality checks.
+   -Create package.
+ This process is repeated often we call it continous integration.
+ 
+ Why do we need CI in our projects?
+ Using CI we can
+             -Find out compile time errors in the code.
+             -Find out Unit test cases & Integration test cases failure.
+ These failures can be notified to the development team immediately.
+ CI enables developers fix code fastly,quickly.
+ 
+ 
+Explain CD?
+After running CI package must be deployed on the server which enables testing team to test the code.
