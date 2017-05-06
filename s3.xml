@@ -1,0 +1,51 @@
+S3 storage?
+  -Object based storage.
+  -Not for installing softwares.
+  
+Feature:
+Highly available.
+Hightly durable.
+Highly Scalable.
+Highly Secure.
+
+Standard Storage:
+pros:
+Ideal for Performance sensitive use cases.
+Available from multiple availability zones(99.99%).
+Data can be Frequesntly accessed.
+Highly durable(Maintains 3 copies across multiple available zones)(99.99%).
+
+Standard 1-A:-
+pros:
+Designed for less frequently accessed data.
+Objects can be accessed in real time.
+Storage cost is cheaper than standard storage.
+Highly durable(99.99%).
+cons:
+Object must be stored atleast 30 days in current storage before u trasition them to standard 1a.
+Suitable for objects greater than 128kpbs.
+Very expensive(there is a retrival fees
+
+Reduced Redundancy:
+It maintains 2 different copies in two availability zones.
+Highly durable.
+
+Glacier:-
+It is suitable for achieving data where data is accessed infrequently.
+Achieved objects can be accessed in real time.
+
+
+Versioning:
+It is intended for avoiding accidental deletion of objects.
+
+Q.Can we delete specific version of version of object in s3?
+Ans.yes.
+
+
+Events?
+We receive notification when specific events occur in a bucket.
+Eg:We use email when an object is deleted in s3.
+   We want to convert an uploading video into different video.
+   When we upload new videos we can send email to our subscribers.
+   
+
